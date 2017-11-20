@@ -1,0 +1,93 @@
+<section class="header">
+	<section class="fl logo inline-block-middle">
+		<b>
+			Construction Engineering 
+			<font style="color: rgb(204, 204, 204);" color="#cccccc">Design</font>
+		</b>
+	</section>
+	<section class="description inline-block-middle">
+		<section class="img-container">
+			<img id="float_img_314" class="float_in_img J_defImage " src="http://14517553.s61i.faiusr.com/4/AD0IsYr2BhAEGAAg4920zAUoiOa1_AYwjQI4Gg.png" alt="AD0IsYr2BhAEGAAg4920zAUoiOa1_AYwjQI4Gg">
+		</section>
+		<section>
+			品质为上、精益求精、安全守信、永续创新
+		</section>
+	</section>
+	<section class="fr phone inline-block-middle">
+		<section class="phone-img inline-block-middle">
+			<img id="float_img_316" class="float_in_img J_defImage " src="http://14517553.s61i.faiusr.com/4/AD0IsYr2BhAEGAAgvt60zAUomKvG_gIwOjg6.png" alt="AD0IsYr2BhAEGAAgvt60zAUomKvG_gIwOjg6">
+		</section>
+		<section class="inline-block-middle">
+			<section class="ml5 tip">
+				全国免费咨询热线：
+			</section>
+			<section class="ml5 num">
+				0571-0000
+			</section>
+		</section>
+	</section>
+</section>
+<nav>
+	<section>
+		<ul class="menus">
+			<li class="active">
+				首页
+			</li>
+			<li>
+				服务范围
+			</li>
+			<li>
+				工程案例
+			</li>
+			<li>
+				新闻动态
+			</li>
+			<li>
+				关于我们
+			</li>
+		</ul>
+	</section>
+</nav>
+<section class="relative">
+	<ul class="boards">
+		<li [class.left]="idx == 1 && direction" [class.right]="idx == 1 && !direction" style="background-image: url(images/AD0IsYr2BhACGAAg4YS1zAUotNvyzAIwgA84oAY.jpg);">
+			<section class="board-container">
+				<section class="content">
+					<img class="float_in_img J_defImage " src="/images/AD0IsYr2BhAEGAAgrYW1zAUo4qb4zQEwnQI45QE.png" style="height: 229px;">
+					<section class="remark">
+						<section class="small">QUALITY COMES FROM PROFESSIONAL</section>
+						<section class="big">源于专业</section>
+						<section class="big" style="text-indent:1em;">铸就辉煌</section>
+						<section class="small" style="text-indent:5.4em;">INREGRITY CAST BRILLIANT AND SUCCESSFUL</section>
+					</section>
+				</section>
+			</section>
+		</li>
+		<li [class.left]="idx == 0 && direction" [class.right]="idx == 0 && !direction" style="background-image: url(images/AD0IsYr2BhACGAAg74S1zAUonpa29gYwgA84oAY.jpg);">
+			<section class="board-container">
+				<section class="content">
+					<section class="float_img_328">
+						<img class="float_in_img J_defImage " src="/images/AD0IsYr2BhAEGAAg8ou1zAUonszx5QQwggQ4HA.png">
+					</section>
+					<section class="float_img_326">
+						<img class="float_in_img J_defImage " src="/images/AD0IsYr2BhAEGAAgn4u1zAUospbz0AEw4AI4TQ.png">
+					</section>
+					<section class="float_img_327">
+						<img class="float_in_img J_defImage " src="/images/AD0IsYr2BhAEGAAgsou1zAUo4Pe3iQQwGzgb.png">
+					</section>
+					<section class="float_img_325">
+						<img class="float_in_img J_defImage " src="/images/AD0IsYr2BhAEGAAg_JHJzQUooKuihwIwlAQ4TQ.png">
+					</section>
+					<section class="float_img_324">
+						<img class="float_in_img J_defImage " src="/images/AD0IsYr2BhAEGAAgmIm1zAUo6If8tAUwkgQ4Ug.png">
+						<section class="float_img_323">
+							<img class="float_in_img J_defImage " src="/images/AD0IsYr2BhAEGAAgxYi1zAUo3LaQ5wEwrwM4JA.png">
+						</section>
+					</section>
+				</section>
+			</section>
+		</li>
+	</ul>
+	<a class="imageSwitchBtn_arrow arrow_prev" (click)="direction=true;idx=1-idx;"></a>
+	<a class="imageSwitchBtn_arrow arrow_next" (click)="direction=false;idx=1-idx;"></a>
+</section>
