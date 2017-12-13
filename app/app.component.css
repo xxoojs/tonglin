@@ -64,6 +64,10 @@ ul{
   font-size: 36px;
 }
 
+.min-width{
+  min-width: 1200px
+}
+
 nav{
   height: 50px;
   background: #2b2b2b;
