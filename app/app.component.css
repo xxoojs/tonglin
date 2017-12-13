@@ -172,11 +172,6 @@ nav .menus li.active, nav .menus li:hover{
   top: 50%;
   margin-top: -35.5px;
   left: 40px;
-  background: url(/images/left.png) no-repeat rgba(0,0,0,0.1);
-}
-
-.imageSwitchBtn_arrow.arrow_prev:hover{
-  background: url(/images/left.png) no-repeat rgba(0,0,0,0.3);
 }
 
 .imageSwitchBtn_arrow.arrow_next{
@@ -185,11 +180,6 @@ nav .menus li.active, nav .menus li:hover{
   top: 50%;
   margin-top: -35.5px;
   right: 40px;
-  background: url(/images/right.png) no-repeat rgba(0,0,0,0.1);
-}
-
-.imageSwitchBtn_arrow.arrow_next:hover{
-  background: url(/images/right.png) no-repeat rgba(0,0,0,0.3);
 }
 
 .float_img_328{
