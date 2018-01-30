@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="/tonglin/">
+    <title>同林有限公司</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body,
+        html {
+            margin: 0px;
+            height: 100%;
+        }
+        
+        #loader {
+            font-size: 2em;
+            text-align: center;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <my-app>
+        <p id="loader">加载中...</p>
+    </my-app>
+    <script>
+        var timeout = 200;
+        var signText = "Loading";
+        var regexp = new RegExp("^Loading([.]*)");
+
+        function showDot() {
+            var loader = document.getElementById('loader');
+            if (loader instanceof HTMLElement) {
+                var result = loader.innerHTML.match(regexp);
+                if (result && result.length === 2) {
+                    loader.innerHTML = signText + (result[1].length > 3 ? '.' : (result[1] + '.'));
+                }
+                setTimeout(showDot, timeout);
+            }
+        }
+        showDot();
+
+        function heml404(){
+            document.body.innerHTML = [
+                '<div style="padding:30px;text-align:center;">',
+                    '<p>',
+                        '<span style="font-size:100px;text-shadow:8px 8px 20px #999;color:#555;font-style:italic;font-family:fantasy;">404</span>',
+                    '</p>',
+                    '<p style="font-size:16px;font-weight:700;line-height:15px;">本系统暂不支持您当前的浏览器访问，有两种方式可解决该问题：',
+                    '<p>',
+                    '<p style="font-size:14px;text-indent:2em;line-height:15px;">',
+                        '<span style="font-weight:700;font-size:15px;">方式一：</span>',
+                        '打开chrome浏览器进行访问（若您电脑未安装chrome浏览器，可',
+                        '<a style="color:blue;" href="/chrome.zip">点击此处下载</a>',
+                        '，下载成功后双击下载的安装文件“双击安装chrome”，稍等片刻即可）',
+                    '</p>',
+                    '<p style="font-size:14px;text-indent:2em;line-height:15px;">',
+                        '<span style="font-weight:700;font-size:15px;">方式二：</span>',
+                        '打开逸曜的“用药管理系统”程序进行访问（若您电脑未安装该程序，可',
+                        '<a style="color:blue;" href="/ipharmacare.zip">点击此处下载</a>,',
+                        '下载成功后双击下载的安装文件“双击安装用药管理系统”，再点击“安装”按钮后稍等片刻即可）',
+                    '</p>',
+                '</div>',
+            ].join('')
+        }
+
+        function navigatorFn(){
+            var userAgent = navigator.userAgent;
+            if(userAgent){
+                var isOpera = userAgent.indexOf("Opera") > -1,
+                    isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera,
+                    isFF = userAgent.indexOf("Firefox") > -1,
+                    isSafari = userAgent.indexOf("Safari") > -1,
+                    isChrome = userAgent.indexOf("Chrome") > -1;
+
+                if (isIE && userAgent.toLowerCase().match(/msie ([\d.]+)/)) {
+                    var version = userAgent.toLowerCase().match(/msie ([\d.]+)/)[1];
+                    if(version){
+                        version = parseInt(version);
+                        if(version < 10){
+                            heml404();
+                        }
+                    }
+                }
+            }
+        }
+        navigatorFn();
+    </script>
+    <script src="dist/polyfills.d810d00e0c4b1628c541.js"></script>
+    <script src="dist/vendor.d810d00e0c4b1628c541.js"></script>
+    <script src="dist/app.d810d00e0c4b1628c541.js"></script>
+</body>
+</html>
