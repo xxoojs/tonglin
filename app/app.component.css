@@ -33,7 +33,7 @@ ul{
 }
 
 .header{
-  padding: 20px 0;
+  /*padding: 20px 0;*/
   width: 1200px;
   margin: auto;
   position: relative;
@@ -42,7 +42,7 @@ ul{
 
 .header .logo{
   width: 330px;
-  height: 50px;
+  height: 90px;
   font-size: 30px;
   color: rgb(228, 57, 60);
 }
