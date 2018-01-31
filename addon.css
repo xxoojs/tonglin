@@ -1,0 +1,42 @@
+.cssHeaderPanel .cssFrame .cssNav .cssFoot li {margin-bottom:12px;margin-right:0px;text-align:center;text-align:left;width:25%}
+/*
+.cssHeaderPanel .cssFrame .cssNav .cssFoot li:nth-child(6n+1) {clear:both}
+*/
+.cssHeaderPanel .cssFrame .cssNav .cssFoot li:nth-child(4n+1) {clear:both}
+.cssHeaderPanel .cssFrame .cssNav .cssFoot li .fa-flickr1 {display:block;background-image:url('social/Flickr.png');background-position:center center;background-repeat:no-repeat;background-size:contain;width:33px;height:30px;}
+.cssHeaderPanel .cssFrame .cssNav .cssFoot li .fa-youku {display:block;background-image:url('social/Youku.png');background-position:center center;background-repeat:no-repeat;background-size:contain;width:27px;height:30px;}
+.cssHeaderPanel .cssFrame .cssNav .cssFoot li.cssWeixin {position:relative;}
+.cssHeaderPanel .cssFrame .cssNav .cssFoot li.cssWeixin .cssBubble {display:none;position:absolute;top:100%;right:130%;z-index:100;left:auto;transform: translate(0%, 0);
+-webkit-transform: translate(0%, 0);
+-moz-transform: translate(0%, 0);
+-ms-transform: translate(0%, 0);}
+.cssHeaderPanel .cssFrame .cssNav .cssFoot li.cssWeixin:hover .cssBubble {display:block}
+.cssHeaderPanel .cssFrame .cssNav .cssFoot li.cssWeixin .cssBubble {background:url('social/up.png') 0 98% no-repeat;padding-top:7px}
+.cssHeaderPanel .cssFrame .cssNav .cssFoot li.cssWeixin .cssBubble div {background:#ffffff;padding:2px;}
+.cssHeaderPanel .cssFrame .cssNav .cssFoot li.cssWeixin .cssBubble div img {max-width:100px;}
+
+@media all and (min-width: 1550px) 
+{
+	.cssHeaderPanel .cssFrame .cssNav .cssFoot li {margin-bottom:15px;}
+}
+
+@media all and (max-width: 960px)  and (min-width: 768px) 
+{
+	.cssHeaderPanel .cssFrame .cssNav .cssFoot li {width:25%;margin-bottom:10px;text-align:center}
+	.cssHeaderPanel .cssFrame .cssNav .cssFoot li .fa-flickr1 ,
+	.cssHeaderPanel .cssFrame .cssNav .cssFoot li .fa-youku {margin:0 auto }
+	/*.cssHeaderPanel .cssFrame .cssNav .cssFoot li:nth-child(6n+1) {clear:none}*/
+	.cssHeaderPanel .cssFrame .cssNav .cssFoot li:nth-child(4n+1) {clear:both}
+}
+
+@media all and (max-width: 960px) 
+{
+	.cssHeaderPanel .cssFrame .cssNav .cssFoot li.cssWeixin:hover .cssBubble {display:none}
+}
+
+.cssMenuMask {
+    opacity: 1;
+    background: rgba(0,0,0,0.75);
+}
+
+body.ie8 .cssMenuMask , body.ie10 .cssMenuMask  {opacity:0.7;background:#000000}
